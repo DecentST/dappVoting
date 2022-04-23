@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dappVoting/static/css/main.34de6062.chunk.css",
-    "main.js": "/dappVoting/static/js/main.1d4d26e8.chunk.js",
-    "main.js.map": "/dappVoting/static/js/main.1d4d26e8.chunk.js.map",
+    "main.js": "/dappVoting/static/js/main.690fad74.chunk.js",
+    "main.js.map": "/dappVoting/static/js/main.690fad74.chunk.js.map",
     "runtime-main.js": "/dappVoting/static/js/runtime-main.e8d06d0b.js",
     "runtime-main.js.map": "/dappVoting/static/js/runtime-main.e8d06d0b.js.map",
     "static/css/2.94ee4241.chunk.css": "/dappVoting/static/css/2.94ee4241.chunk.css",
     "static/js/2.61a01cbc.chunk.js": "/dappVoting/static/js/2.61a01cbc.chunk.js",
     "static/js/2.61a01cbc.chunk.js.map": "/dappVoting/static/js/2.61a01cbc.chunk.js.map",
     "index.html": "/dappVoting/index.html",
-    "precache-manifest.e7468aa01b4335ddc0fbb066bbb8830a.js": "/dappVoting/precache-manifest.e7468aa01b4335ddc0fbb066bbb8830a.js",
+    "precache-manifest.05f6b1e256d876931ee9d56bd7496e35.js": "/dappVoting/precache-manifest.05f6b1e256d876931ee9d56bd7496e35.js",
     "service-worker.js": "/dappVoting/service-worker.js",
     "static/css/2.94ee4241.chunk.css.map": "/dappVoting/static/css/2.94ee4241.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/dappVoting/static/css/main.34de6062.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.94ee4241.chunk.css",
     "static/js/2.61a01cbc.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.1d4d26e8.chunk.js"
+    "static/js/main.690fad74.chunk.js"
   ]
 }
