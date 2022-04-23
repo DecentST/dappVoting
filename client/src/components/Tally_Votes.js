@@ -18,7 +18,7 @@ function TallyVotes(props) {
             .on('error', function(){ 
                 Store.addNotification({
                     title: "Error :",
-                    message: `Wrong status`,
+                    message: `error`,
                     type: "danger",
                     insert: "top",
                     container: "top-center",
@@ -34,7 +34,7 @@ function TallyVotes(props) {
 
                 Store.addNotification({
                     title: "Event data: ",
-                    message: `Your proposal has been registered with number #${event.returnValues.proposalId}`,
+                    message: `${event.event} from ${WorkflowStatus[event.returnValues.previousStatus]} to: ${WorkflowStatus[event.returnValues.newStatus]}`,
                     type: "success",
                     insert: "top",
                     container: "top-center",
