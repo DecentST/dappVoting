@@ -40,13 +40,9 @@ function App() {
 
   const canConnectToContract = account && myWeb3Api.contract
 
-
-
   window.ethereum.on('accountsChanged', function (accounts) {
     window.location.reload()
   });
-
- 
 
   useEffect(() => {
     (async function () {
@@ -57,8 +53,6 @@ function App() {
         // Use web3 to get the user's accounts.
         const accounts = await web3.eth.getAccounts();
         setAccount(accounts)
-        console.log(accounts);
-
         // Get the contract instance.
         const networkId = await web3.eth.net.getId();
         const deployedNetwork = VotingContract.networks[networkId];
@@ -98,7 +92,7 @@ function App() {
           <ReactNotifications />   
         <div >
           <div>  
-            <h2>You are owner : yes ({account[0]})</h2> 
+            <h2>You are owner : yes ({account})</h2> 
           </div>
           <div >
             <h4>Workflow status: {currentStatus[workflowStatus]}</h4>
@@ -124,10 +118,10 @@ function App() {
     return (  
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',
         height: '60rem'}}>
-       
+       <ReactNotifications /> 
         <div >
           <div>
-            You are owner : no
+            You are owner : no ({account})
           </div>
           <div >
             Workflow status: {currentStatus[workflowStatus]}

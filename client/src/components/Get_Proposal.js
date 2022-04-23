@@ -12,9 +12,10 @@ function GetProposal(props) {
         setInputPropId(event.target.value)
     };
     const getOneProposal = async () => {
+
         try {
-            const _getOneProposal = await contract.methods.getOneProposal(propIdValue).call()
-            setProposalText(`Proposal description : ${_getOneProposal.description}`)
+            const proposal = await contract.methods.getOneProposal(propIdValue).call({from: props.voter[0]})
+            setProposalText(`Proposal description : ${proposal.description}`)
         
         } catch(_) {
             setProposalText('This proposal does NOT exist')

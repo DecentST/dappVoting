@@ -58,5 +58,4 @@ function TallyVotes(props) {
          </>
     )
 }
-
 export default TallyVotes;
